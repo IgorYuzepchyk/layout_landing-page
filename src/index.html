@@ -373,15 +373,18 @@
                   class="contacts__form-input"
                   type="text"
                   placeholder="Name"
+                  required
                 />
                 <input
                   class="contacts__form-input"
                   type="email"
                   placeholder="Email"
+                  required
                 />
                 <textarea
                   class="contacts__form-input contacts__form-message"
                   placeholder="Message"
+                  required
                 ></textarea>
 
                 <button
@@ -405,7 +408,11 @@
                 </div>
                 <div class="contacts__email">
                   <div class="contacts__title">Email</div>
-                  <p class="contacts__description">hello@miami.com</p>
+                  <a href="mailto:hello@miami.com"
+                  class="contacts__email-link"
+                  >
+                    <p class="contacts__description">hello@miami.com</p>
+                  </a>
                 </div>
                 <div class="contacts__address">
                   <div class="contacts__title">Address</div>
