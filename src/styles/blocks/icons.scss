@@ -15,7 +15,31 @@
   }
 
   &--phone {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
     background-image: url(../icons/Icon-Phone-call-2x.png);
+
+    @include on-tablet {
+      &:hover::before {
+        position: absolute;
+
+        right: 42px;
+
+        content: '+1 234 555-55-55';
+        font-family: Poppins, sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 2px;
+
+        color: #fff;
+
+        white-space: nowrap;
+      }
+    }
   }
 
   &--menu {
